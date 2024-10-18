@@ -1,4 +1,3 @@
-// index.route.js
 const { Router } = require('express');
 const router = Router();
 

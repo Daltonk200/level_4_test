@@ -17,7 +17,7 @@ const getAll = async (request, response) => {
 const getOneById = async (request, response) => {
     try {
         const { id } = request.params;
-        const course = await Course.findById(id); // findById is better for MongoDB ids
+        const course = await Course.findById(id); 
         if (!course) {
             response.status(404).json({ message: 'Course not found' });
         } else {
