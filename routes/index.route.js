@@ -1,9 +1,8 @@
-// index.route.js
 const { Router } = require('express');
 const router = Router();
 
-const indexController = require('../src/controllers/course.controller.js');
-const indexMiddleware = require('../src/middlewares/course.middleware.js');
+const courseController = require('../src/controllers/course.controller.js');
+const courseMiddleware = require('../src/middlewares/course.middleware.js');
 
 router.get('/courses', courseController.getAll);
 router.get('/courses/:id', courseController.getOneById);
